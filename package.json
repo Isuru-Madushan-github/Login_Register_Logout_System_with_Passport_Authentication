@@ -1,0 +1,25 @@
+{
+  "name": "login_register_logout_system_with_passport_authentication",
+  "version": "1.0.0",
+  "description": "Login Register Logout System with Passport Authentication",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Isuru Madushan",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "connect-flash": "^0.1.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongoose": "^7.4.1",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0"
+  }
+}
