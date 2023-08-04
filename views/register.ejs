@@ -1,0 +1,32 @@
+<%-include('./partials/header')-%>
+
+    <div class="container register-page-container">
+        <div class="center-div">
+            <h1><i class="fas fa-user-plus"></i> Register</h1>
+        </div>
+        <%- include('./partials/messages') -%>
+        <div class="form-container">
+            <form class="register-form" action="/user/register" method="POST">
+                <div class="field">
+                    <label for=""><sup>*</sup>Name:</label>
+                    <input type="text" placeholder="Enter Name" name="name" value="<%=locals.name ? name : '' %>" required>
+                </div>
+                <div class="field">
+                    <label for=""><sup>*</sup>Email:</label>
+                    <input type="email" placeholder="Enter Email" name="email" value="<%=locals.email ? email : '' %>" required>
+                </div>
+                <div class="field">
+                    <label for=""><sup>*</sup>Password:</label>
+                    <input type="password" placeholder="Create Password" name="password" value="<%=locals.password ? password : '' %>" required>
+                </div>
+                <div class="field">
+                    <label for=""><sup>*</sup>Confirm Password:</label>
+                    <input type="password" placeholder="Confirm Password" name="password2" value="<%=locals.password2 ? password2 : '' %>" required>
+                </div>
+                <button type="submit">Register</button>    
+            </form> 
+            <p>Have an account? <a href="/">Login</a></p>
+        </div>
+    </div>    
+    
+<%-include('./partials/footer')-%>

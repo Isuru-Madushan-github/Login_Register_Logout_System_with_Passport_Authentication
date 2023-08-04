@@ -1,0 +1,39 @@
+<% if(locals.errors){ %>
+
+    <% errors.forEach((error)=>{ %>
+        <div class="message-container">            
+            <p><span>*</span> <%= error.message %></p>
+            <i class="fa-solid fa-xmark" onclick="closeMsg(event)"></i>
+        </div>
+    <% }); %>
+
+<% } %>
+
+
+<% if(success_msg != ''){ %>
+
+    <div class="message-container success">            
+        <p><%= success_msg %></p>
+        <i class="fa-solid fa-xmark" onclick="closeMsg(event)"></i>
+    </div>
+
+<% } %>
+
+
+<% if(error_msg != ''){ %>
+
+    <div class="message-container">            
+        <p><%= error_msg %></p>
+        <i class="fa-solid fa-xmark" onclick="closeMsg(event)"></i>
+    </div>
+
+<% } %>
+
+<% if(error != ''){ %>
+
+    <div class="message-container">            
+        <p><%= error %></p>
+        <i class="fa-solid fa-xmark" onclick="closeMsg(event)"></i>
+    </div>
+
+<% } %>

@@ -1,0 +1,11 @@
+<%- include('./partials/header') -%>
+
+    <div class="container">
+        <div class="center-div">
+            <h1>Welcome to Dashboard</h1>
+            <h4><%= locals.username ? username : '' %></h4>
+            <a id="logout" href="/user/logout">Logout</a>
+        </div>    
+    </div>
+
+<%- include('./partials/footer') -%>
